@@ -1,0 +1,533 @@
+{
+  "model_version": "spam_shield_20260423_010140",
+  "trained_at": "2026-04-23T01:01:40",
+  "best_params": {
+    "clf__C": 4
+  },
+  "accuracy": 0.9874,
+  "precision": 0.947,
+  "recall": 0.9597,
+  "f1_score": 0.9533,
+  "roc_auc": 0.9945,
+  "dataset_rows": 5572,
+  "train_rows": 4457,
+  "test_rows": 1115,
+  "confusion_matrix": [
+    [
+      958,
+      8
+    ],
+    [
+      6,
+      143
+    ]
+  ],
+  "roc_curve": {
+    "fpr": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.001035,
+      0.001035,
+      0.00207,
+      0.00207,
+      0.00207,
+      0.00207,
+      0.00207,
+      0.00207,
+      0.003106,
+      0.003106,
+      0.004141,
+      0.004141,
+      0.005176,
+      0.005176,
+      0.006211,
+      0.006211,
+      0.017598,
+      0.017598,
+      0.040373,
+      0.040373,
+      0.049689,
+      0.05176,
+      0.095238,
+      0.095238,
+      0.13147,
+      0.13147,
+      0.134576,
+      0.136646,
+      0.161491,
+      0.163561,
+      0.193582,
+      0.193582,
+      0.213251,
+      0.213251,
+      0.23913,
+      0.241201,
+      0.258799,
+      0.26087,
+      0.34472,
+      0.346791,
+      0.360248,
+      0.362319,
+      0.495859,
+      0.49793,
+      0.52381,
+      0.52795,
+      0.535197,
+      0.537267,
+      0.556936,
+      0.559006,
+      0.590062,
+      0.592133,
+      0.623188,
+      0.625259,
+      0.6294,
+      0.63147,
+      0.796066,
+      0.798137,
+      0.824017,
+      0.826087,
+      0.875776,
+      0.883023,
+      0.962733,
+      0.965839,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.006711,
+      0.04698,
+      0.060403,
+      0.395973,
+      0.409396,
+      0.449664,
+      0.469799,
+      0.577181,
+      0.577181,
+      0.684564,
+      0.684564,
+      0.718121,
+      0.744966,
+      0.785235,
+      0.798658,
+      0.865772,
+      0.865772,
+      0.912752,
+      0.912752,
+      0.932886,
+      0.932886,
+      0.95302,
+      0.95302,
+      0.959732,
+      0.959732,
+      0.966443,
+      0.966443,
+      0.973154,
+      0.973154,
+      0.973154,
+      0.973154,
+      0.979866,
+      0.979866,
+      0.986577,
+      0.986577,
+      0.986577,
+      0.986577,
+      0.986577,
+      0.986577,
+      0.993289,
+      0.993289,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "top_keywords": {
+    "spam": [
+      {
+        "token": "longnumber",
+        "weight": 5.673
+      },
+      {
+        "token": "urltoken",
+        "weight": 2.8343
+      },
+      {
+        "token": "number number",
+        "weight": 2.6365
+      },
+      {
+        "token": "number",
+        "weight": 2.5447
+      },
+      {
+        "token": "txt",
+        "weight": 2.4039
+      },
+      {
+        "token": "uk",
+        "weight": 2.2271
+      },
+      {
+        "token": "sms",
+        "weight": 2.2034
+      },
+      {
+        "token": "to longnumber",
+        "weight": 2.1836
+      },
+      {
+        "token": "your",
+        "weight": 2.1437
+      },
+      {
+        "token": "reply",
+        "weight": 2.1236
+      },
+      {
+        "token": "free",
+        "weight": 2.0877
+      },
+      {
+        "token": "text",
+        "weight": 2.0417
+      },
+      {
+        "token": "to",
+        "weight": 1.9578
+      },
+      {
+        "token": "call longnumber",
+        "weight": 1.8404
+      },
+      {
+        "token": "for",
+        "weight": 1.7394
+      }
+    ],
+    "ham": [
+      {
+        "token": "me",
+        "weight": -1.7053
+      },
+      {
+        "token": "my",
+        "weight": -1.652
+      },
+      {
+        "token": "lt",
+        "weight": -1.3531
+      },
+      {
+        "token": "gt",
+        "weight": -1.3321
+      },
+      {
+        "token": "lt gt",
+        "weight": -1.2147
+      },
+      {
+        "token": "at",
+        "weight": -1.1751
+      },
+      {
+        "token": "at number",
+        "weight": -1.115
+      },
+      {
+        "token": "ok",
+        "weight": -1.0582
+      },
+      {
+        "token": "got",
+        "weight": -0.9622
+      },
+      {
+        "token": "but",
+        "weight": -0.9199
+      },
+      {
+        "token": "that",
+        "weight": -0.9085
+      },
+      {
+        "token": "ll",
+        "weight": -0.8935
+      },
+      {
+        "token": "up",
+        "weight": -0.8406
+      },
+      {
+        "token": "da",
+        "weight": -0.8352
+      },
+      {
+        "token": "its",
+        "weight": -0.8062
+      }
+    ]
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.2,
+      "precision": 0.8727,
+      "recall": 0.9664,
+      "f1_score": 0.9172,
+      "spam_alert_rate": 0.148
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.9167,
+      "recall": 0.9597,
+      "f1_score": 0.9377,
+      "spam_alert_rate": 0.1399
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.947,
+      "recall": 0.9597,
+      "f1_score": 0.9533,
+      "spam_alert_rate": 0.1354
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.947,
+      "recall": 0.9597,
+      "f1_score": 0.9533,
+      "spam_alert_rate": 0.1354
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.966,
+      "recall": 0.953,
+      "f1_score": 0.9595,
+      "spam_alert_rate": 0.1318
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9653,
+      "recall": 0.9329,
+      "f1_score": 0.9488,
+      "spam_alert_rate": 0.1291
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.9718,
+      "recall": 0.9262,
+      "f1_score": 0.9485,
+      "spam_alert_rate": 0.1274
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "model": "Logistic (current)",
+      "accuracy": 0.9874,
+      "precision": 0.947,
+      "recall": 0.9597,
+      "f1_score": 0.9533,
+      "roc_auc": 0.9945
+    },
+    {
+      "model": "Naive Bayes baseline",
+      "accuracy": 0.983,
+      "precision": 0.9924,
+      "recall": 0.8792,
+      "f1_score": 0.9324,
+      "roc_auc": 0.9881
+    },
+    {
+      "model": "Linear SVM baseline",
+      "accuracy": 0.9892,
+      "precision": 0.979,
+      "recall": 0.9396,
+      "f1_score": 0.9589,
+      "roc_auc": 0.9922
+    }
+  ],
+  "error_analysis_source": "out_of_fold_predictions_at_threshold_0.50",
+  "error_analysis": {
+    "false_positives": [
+      {
+        "message": "645",
+        "spam_probability": 0.9928,
+        "reason": "Ham message contains strong spam-like terms: number."
+      },
+      {
+        "message": "U 2.",
+        "spam_probability": 0.9888,
+        "reason": "Ham message contains strong spam-like terms: number."
+      },
+      {
+        "message": "Yun ah.the ubi one say if \u00cc_ wan call by tomorrow.call 67441233 look for irene.ere only got bus8,22,65,61,66,382. Ubi cres,ubi tech park.6ph for 1st 5wkg days.\u00cc\u00acn",
+        "spam_probability": 0.9452,
+        "reason": "Ham message contains strong spam-like terms: longnumber, number number, number."
+      },
+      {
+        "message": "Yep then is fine 7.30 or 8.30 for ice age.",
+        "spam_probability": 0.9032,
+        "reason": "Ham message contains strong spam-like terms: number number, number, for."
+      },
+      {
+        "message": "MY NO. IN LUTON 0125698789 RING ME IF UR AROUND! H*",
+        "spam_probability": 0.8706,
+        "reason": "Ham message contains strong spam-like terms: longnumber, number, to."
+      },
+      {
+        "message": "Waiting for your call.",
+        "spam_probability": 0.6713,
+        "reason": "Ham message contains strong spam-like terms: your, for."
+      },
+      {
+        "message": "I'm vivek:)i got call from your number.",
+        "spam_probability": 0.6597,
+        "reason": "Ham message contains strong spam-like terms: number, your."
+      },
+      {
+        "message": "I liked the new mobile",
+        "spam_probability": 0.6512,
+        "reason": "Message style looked promotional or numeric despite being legitimate."
+      },
+      {
+        "message": "Wewa is 130. Iriver 255. All 128 mb.",
+        "spam_probability": 0.6511,
+        "reason": "Ham message contains strong spam-like terms: number."
+      },
+      {
+        "message": "This is ur face test ( 1 2 3 4 5 6 7 8 9  &lt;#&gt;  ) select any number i will tell ur face astrology.... am waiting. quick reply...",
+        "spam_probability": 0.6504,
+        "reason": "Ham message contains strong spam-like terms: number number, number, reply."
+      }
+    ],
+    "false_negatives": [
+      {
+        "message": "Do you ever notice that when you're driving, anyone going slower than you is an idiot and everyone driving faster than you is a maniac?",
+        "spam_probability": 0.0069,
+        "reason": "Spam message looks conversational with ham-like terms: at, that."
+      },
+      {
+        "message": "Hello darling how are you today? I would love to have a chat, why dont you tell me what you look like and what you are in to sexy?",
+        "spam_probability": 0.015,
+        "reason": "Spam message looks conversational with ham-like terms: me, at, ok."
+      },
+      {
+        "message": "How come it takes so little time for a child who is afraid of the dark to become a teenager who wants to stay out all night?",
+        "spam_probability": 0.0184,
+        "reason": "Spam message looks conversational with ham-like terms: me, ll, da."
+      },
+      {
+        "message": "Did you hear about the new \\Divorce Barbie\\\"? It comes with all of Ken's stuff!\"",
+        "spam_probability": 0.0184,
+        "reason": "Spam message looks conversational with ham-like terms: me, ll."
+      },
+      {
+        "message": "Hello. We need some posh birds and chaps to user trial prods for champneys. Can i put you down? I need your address and dob asap. Ta r",
+        "spam_probability": 0.031,
+        "reason": "Spam message looks conversational with ham-like terms: me, ll."
+      },
+      {
+        "message": "Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?",
+        "spam_probability": 0.0381,
+        "reason": "Spam message looks conversational with ham-like terms: at, that, ll."
+      },
+      {
+        "message": "Would you like to see my XXX pics they are so hot they were nearly banned in the uk!",
+        "spam_probability": 0.0408,
+        "reason": "Spam message looks conversational with ham-like terms: my."
+      },
+      {
+        "message": "Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!",
+        "spam_probability": 0.0482,
+        "reason": "Spam message looks conversational with ham-like terms: me, at, got."
+      },
+      {
+        "message": "For sale - arsenal dartboard. Good condition but no doubles or trebles!",
+        "spam_probability": 0.0505,
+        "reason": "Spam message looks conversational with ham-like terms: but, da."
+      },
+      {
+        "message": "Latest News! Police station toilet stolen, cops have nothing to go on!",
+        "spam_probability": 0.0577,
+        "reason": "Spam message looks conversational with ham-like terms: at."
+      }
+    ]
+  },
+  "quality_gate": {
+    "previous_best_f1": 0.9533,
+    "current_f1": 0.9533,
+    "max_allowed_drop": 0.01,
+    "passed": true
+  },
+  "success_criteria": {
+    "thresholds": {
+      "f1_score": 0.95,
+      "roc_auc": 0.98
+    },
+    "results": {
+      "f1_score": {
+        "actual": 0.9533,
+        "target": 0.95,
+        "passed": true
+      },
+      "roc_auc": {
+        "actual": 0.9945,
+        "target": 0.98,
+        "passed": true
+      }
+    },
+    "passed_all": true
+  },
+  "data_validation": {
+    "ham_count": 4825,
+    "spam_count": 747,
+    "minority_ratio": 0.1341,
+    "total_rows": 5572
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "package_versions": {
+      "python": "3.12.6",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scikit_learn": "1.8.0",
+      "joblib": "1.5.3"
+    }
+  },
+  "notebook_reuse_notes": "Baseline model family and LR C-grid adapted from spam (1).ipynb."
+}
