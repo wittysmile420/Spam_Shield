@@ -1,6 +1,6 @@
 {
-  "model_version": "spam_shield_20260423_113509",
-  "trained_at": "2026-04-23T11:35:09",
+  "model_version": "spam_shield_20260423_111810",
+  "trained_at": "2026-04-23T11:18:10",
   "best_params": {
     "clf__C": 4
   },

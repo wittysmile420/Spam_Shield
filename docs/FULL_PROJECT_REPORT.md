@@ -1,8 +1,8 @@
 # Comprehensive Technical Report - SMS Spam Shield
 
-Generated on: 2026-04-23T01:18:40
+Generated on: 2026-04-23T11:35:20
 Loaded metrics source: `artifacts/metrics.json`
-Model version: `spam_shield_20260423_010140`
+Model version: `spam_shield_20260423_113509`
 
 ## 1) Abstract
 SMS Spam Shield is an end-to-end text-classification system that operationalizes SMS spam detection from data ingestion through deployable inference UI.
@@ -374,9 +374,86 @@ Test intent coverage:
 6. quality gate regression enforcement.
 
 ## 12) Full Repository Inventory
-Total repository files discovered (excluding `.venv`): `47`
+Total repository files discovered (excluding `.venv`): `128`
 
 ```text
+.git/COMMIT_EDITMSG
+.git/HEAD
+.git/config
+.git/description
+.git/gk/config
+.git/hooks/applypatch-msg.sample
+.git/hooks/commit-msg.sample
+.git/hooks/fsmonitor-watchman.sample
+.git/hooks/post-update.sample
+.git/hooks/pre-applypatch.sample
+.git/hooks/pre-commit.sample
+.git/hooks/pre-merge-commit.sample
+.git/hooks/pre-push.sample
+.git/hooks/pre-rebase.sample
+.git/hooks/pre-receive.sample
+.git/hooks/prepare-commit-msg.sample
+.git/hooks/push-to-checkout.sample
+.git/hooks/sendemail-validate.sample
+.git/hooks/update.sample
+.git/index
+.git/info/exclude
+.git/logs/HEAD
+.git/logs/refs/heads/main
+.git/logs/refs/remotes/origin/main
+.git/objects/02/f076042b705805ab984d5a104ac8fc68438215
+.git/objects/03/9927d3e806b8be560082daf45493c7125a06e0
+.git/objects/03/b97ee170a87361c322d2398b45d233a80561c8
+.git/objects/04/0ff98d83b7e97baf2bfa6105c5fd2e90e99619
+.git/objects/06/3b523385fd9bef9413119d8bcdd1865a8b7fcb
+.git/objects/09/e3c256472d404afbeb51e8092fadb7c4c8c830
+.git/objects/0b/2ef7caae249a9a3eb2ce8ecb9f349f44edadde
+.git/objects/0d/eb6161da2ddc62b1294231a3da3563d3e03d2f
+.git/objects/12/5bf4dab5a0e3be68531ca6d7351d67c98c47c9
+.git/objects/18/1dbc246461e36f730ff2fff2ed07d8710e24cd
+.git/objects/19/c8a15ba4f9d691e13ab31ab29ad867e556fcce
+.git/objects/27/0981231513346dc0dbb9944a60ae769b564f97
+.git/objects/2d/ed923487de6487b95b1125a12dfd99ed1ea8c3
+.git/objects/33/61ae7842976521d72952dfad86d780330ef858
+.git/objects/35/ccb12f056f654d9b69662204683028569795a3
+.git/objects/35/d4dd538637583784e692b67bd7b16335995e5d
+.git/objects/38/73705f328bdd193659d6290c7b867ec6e57ad5
+.git/objects/3e/b50f131b1ce1e964127033aeb39467dc4d49d1
+.git/objects/43/fea9208988cc0ee27e7115b213da4aedb13d9f
+.git/objects/47/a7009ede2cdff5b0c61feb73134eea7296e51f
+.git/objects/47/e58e290a733683fb18c50ce9a6d3a580ba772f
+.git/objects/4f/bcf3cd69420ec5ee812167dbc40164eb09116e
+.git/objects/50/0d106cf49558d31ab5e7dcb65dafe0122ce499
+.git/objects/57/9b7ce2c9a0e3985ca971178f01421b33d767f3
+.git/objects/5f/a034c6a28809dd987e501f3c44886a5426148d
+.git/objects/61/d738440426448e9b74dcd878343910712971c6
+.git/objects/62/f089a68982c71fd0ddf66e235a6e6b60ba1c4b
+.git/objects/67/9d0c8fa22c3f37c13c78038fd55ccaefe2be79
+.git/objects/6d/d7c8b98889d185468fa0f1a8bea7aeb9fb5dc3
+.git/objects/76/01dcb6b6db3e6f7c83a0ec7d5d6f7704022d71
+.git/objects/7d/084c1c081ed01751d26a7da9b5ab0fcd765449
+.git/objects/81/ef4c98a3b9fe7fc3b2e239928880254053f716
+.git/objects/88/201f9eccd4535f819f7ae69cdcb4a667e35ce5
+.git/objects/97/76773c971160dd0a489aeaff025163bdae2bcf
+.git/objects/9e/becec05061ce0e6e210b2f53dee65e822cec0e
+.git/objects/a3/90467be01777856e0e9794fb89ed9771193a4a
+.git/objects/af/9541d9b43cc12a4949a42e901863a1bf1c212a
+.git/objects/b3/4f0d91363d1a426f40a901f13121cd5dfae251
+.git/objects/bf/2d0c1a97ba9220b7e412387e2b5608f824f95c
+.git/objects/c2/b5add3705ca3d8c5ac00f7b5c9d0bd3e1ee579
+.git/objects/c3/25bd61f397b8fdea620873b36fbeee18ee5cc7
+.git/objects/d2/17467bdb2d2bee9df85cf8a57badd8c49c00d2
+.git/objects/d4/50a087e33634a3ded49bb944d8805f22b583c5
+.git/objects/d4/a35f5aafba4a6c5ea16de9666d627cc7ac1340
+.git/objects/db/fe1f4693769c1acd52806bffe3059604e80bcd
+.git/objects/e2/856bd8af3cdde8ccf4d9476347a86a0064b0e7
+.git/objects/f0/686b1452600c879cb7e9c58a6ccb03076b6297
+.git/objects/f7/08267384e619acd7896dcfe6c6ff0c794b59fb
+.git/objects/f8/2d5de1c26939773fc64a9c42dcc49ecd044864
+.git/objects/f8/c68a29b21975c1270c4bfdb0422ebb91a82880
+.git/objects/ff/4b38bd0f7d8a0937b40d173400c7eb504d1864
+.git/refs/heads/main
+.git/refs/remotes/origin/main
 README.md
 __pycache__/app.cpython-312.pyc
 __pycache__/generate_model_report.cpython-312.pyc
@@ -393,6 +470,8 @@ artifacts/metrics_20260423_005347.json
 artifacts/metrics_20260423_005542.json
 artifacts/metrics_20260423_005749.json
 artifacts/metrics_20260423_010140.json
+artifacts/metrics_20260423_111810.json
+artifacts/metrics_20260423_113509.json
 artifacts/spam_model.joblib
 artifacts/spam_model_20260422_232423.joblib
 artifacts/spam_model_20260422_232846.joblib
@@ -403,6 +482,8 @@ artifacts/spam_model_20260423_005347.joblib
 artifacts/spam_model_20260423_005542.joblib
 artifacts/spam_model_20260423_005749.joblib
 artifacts/spam_model_20260423_010140.joblib
+artifacts/spam_model_20260423_111810.joblib
+artifacts/spam_model_20260423_113509.joblib
 docs/ARCHITECTURE.md
 docs/DEMO_WALKTHROUGH.md
 docs/DEVELOPER_GUIDE.md
@@ -429,6 +510,83 @@ train_model.py
 ## 13) File-by-File Purpose Map
 | File | Purpose |
 | --- | --- |
+| .git/COMMIT_EDITMSG | Repository file (see module-level docs or folder guide). |
+| .git/HEAD | Repository file (see module-level docs or folder guide). |
+| .git/config | Repository file (see module-level docs or folder guide). |
+| .git/description | Repository file (see module-level docs or folder guide). |
+| .git/gk/config | Repository file (see module-level docs or folder guide). |
+| .git/hooks/applypatch-msg.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/commit-msg.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/fsmonitor-watchman.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/post-update.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/pre-applypatch.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/pre-commit.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/pre-merge-commit.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/pre-push.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/pre-rebase.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/pre-receive.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/prepare-commit-msg.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/push-to-checkout.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/sendemail-validate.sample | Repository file (see module-level docs or folder guide). |
+| .git/hooks/update.sample | Repository file (see module-level docs or folder guide). |
+| .git/index | Repository file (see module-level docs or folder guide). |
+| .git/info/exclude | Repository file (see module-level docs or folder guide). |
+| .git/logs/HEAD | Repository file (see module-level docs or folder guide). |
+| .git/logs/refs/heads/main | Repository file (see module-level docs or folder guide). |
+| .git/logs/refs/remotes/origin/main | Repository file (see module-level docs or folder guide). |
+| .git/objects/02/f076042b705805ab984d5a104ac8fc68438215 | Repository file (see module-level docs or folder guide). |
+| .git/objects/03/9927d3e806b8be560082daf45493c7125a06e0 | Repository file (see module-level docs or folder guide). |
+| .git/objects/03/b97ee170a87361c322d2398b45d233a80561c8 | Repository file (see module-level docs or folder guide). |
+| .git/objects/04/0ff98d83b7e97baf2bfa6105c5fd2e90e99619 | Repository file (see module-level docs or folder guide). |
+| .git/objects/06/3b523385fd9bef9413119d8bcdd1865a8b7fcb | Repository file (see module-level docs or folder guide). |
+| .git/objects/09/e3c256472d404afbeb51e8092fadb7c4c8c830 | Repository file (see module-level docs or folder guide). |
+| .git/objects/0b/2ef7caae249a9a3eb2ce8ecb9f349f44edadde | Repository file (see module-level docs or folder guide). |
+| .git/objects/0d/eb6161da2ddc62b1294231a3da3563d3e03d2f | Repository file (see module-level docs or folder guide). |
+| .git/objects/12/5bf4dab5a0e3be68531ca6d7351d67c98c47c9 | Repository file (see module-level docs or folder guide). |
+| .git/objects/18/1dbc246461e36f730ff2fff2ed07d8710e24cd | Repository file (see module-level docs or folder guide). |
+| .git/objects/19/c8a15ba4f9d691e13ab31ab29ad867e556fcce | Repository file (see module-level docs or folder guide). |
+| .git/objects/27/0981231513346dc0dbb9944a60ae769b564f97 | Repository file (see module-level docs or folder guide). |
+| .git/objects/2d/ed923487de6487b95b1125a12dfd99ed1ea8c3 | Repository file (see module-level docs or folder guide). |
+| .git/objects/33/61ae7842976521d72952dfad86d780330ef858 | Repository file (see module-level docs or folder guide). |
+| .git/objects/35/ccb12f056f654d9b69662204683028569795a3 | Repository file (see module-level docs or folder guide). |
+| .git/objects/35/d4dd538637583784e692b67bd7b16335995e5d | Repository file (see module-level docs or folder guide). |
+| .git/objects/38/73705f328bdd193659d6290c7b867ec6e57ad5 | Repository file (see module-level docs or folder guide). |
+| .git/objects/3e/b50f131b1ce1e964127033aeb39467dc4d49d1 | Repository file (see module-level docs or folder guide). |
+| .git/objects/43/fea9208988cc0ee27e7115b213da4aedb13d9f | Repository file (see module-level docs or folder guide). |
+| .git/objects/47/a7009ede2cdff5b0c61feb73134eea7296e51f | Repository file (see module-level docs or folder guide). |
+| .git/objects/47/e58e290a733683fb18c50ce9a6d3a580ba772f | Repository file (see module-level docs or folder guide). |
+| .git/objects/4f/bcf3cd69420ec5ee812167dbc40164eb09116e | Repository file (see module-level docs or folder guide). |
+| .git/objects/50/0d106cf49558d31ab5e7dcb65dafe0122ce499 | Repository file (see module-level docs or folder guide). |
+| .git/objects/57/9b7ce2c9a0e3985ca971178f01421b33d767f3 | Repository file (see module-level docs or folder guide). |
+| .git/objects/5f/a034c6a28809dd987e501f3c44886a5426148d | Repository file (see module-level docs or folder guide). |
+| .git/objects/61/d738440426448e9b74dcd878343910712971c6 | Repository file (see module-level docs or folder guide). |
+| .git/objects/62/f089a68982c71fd0ddf66e235a6e6b60ba1c4b | Repository file (see module-level docs or folder guide). |
+| .git/objects/67/9d0c8fa22c3f37c13c78038fd55ccaefe2be79 | Repository file (see module-level docs or folder guide). |
+| .git/objects/6d/d7c8b98889d185468fa0f1a8bea7aeb9fb5dc3 | Repository file (see module-level docs or folder guide). |
+| .git/objects/76/01dcb6b6db3e6f7c83a0ec7d5d6f7704022d71 | Repository file (see module-level docs or folder guide). |
+| .git/objects/7d/084c1c081ed01751d26a7da9b5ab0fcd765449 | Repository file (see module-level docs or folder guide). |
+| .git/objects/81/ef4c98a3b9fe7fc3b2e239928880254053f716 | Repository file (see module-level docs or folder guide). |
+| .git/objects/88/201f9eccd4535f819f7ae69cdcb4a667e35ce5 | Repository file (see module-level docs or folder guide). |
+| .git/objects/97/76773c971160dd0a489aeaff025163bdae2bcf | Repository file (see module-level docs or folder guide). |
+| .git/objects/9e/becec05061ce0e6e210b2f53dee65e822cec0e | Repository file (see module-level docs or folder guide). |
+| .git/objects/a3/90467be01777856e0e9794fb89ed9771193a4a | Repository file (see module-level docs or folder guide). |
+| .git/objects/af/9541d9b43cc12a4949a42e901863a1bf1c212a | Repository file (see module-level docs or folder guide). |
+| .git/objects/b3/4f0d91363d1a426f40a901f13121cd5dfae251 | Repository file (see module-level docs or folder guide). |
+| .git/objects/bf/2d0c1a97ba9220b7e412387e2b5608f824f95c | Repository file (see module-level docs or folder guide). |
+| .git/objects/c2/b5add3705ca3d8c5ac00f7b5c9d0bd3e1ee579 | Repository file (see module-level docs or folder guide). |
+| .git/objects/c3/25bd61f397b8fdea620873b36fbeee18ee5cc7 | Repository file (see module-level docs or folder guide). |
+| .git/objects/d2/17467bdb2d2bee9df85cf8a57badd8c49c00d2 | Repository file (see module-level docs or folder guide). |
+| .git/objects/d4/50a087e33634a3ded49bb944d8805f22b583c5 | Repository file (see module-level docs or folder guide). |
+| .git/objects/d4/a35f5aafba4a6c5ea16de9666d627cc7ac1340 | Repository file (see module-level docs or folder guide). |
+| .git/objects/db/fe1f4693769c1acd52806bffe3059604e80bcd | Repository file (see module-level docs or folder guide). |
+| .git/objects/e2/856bd8af3cdde8ccf4d9476347a86a0064b0e7 | Repository file (see module-level docs or folder guide). |
+| .git/objects/f0/686b1452600c879cb7e9c58a6ccb03076b6297 | Repository file (see module-level docs or folder guide). |
+| .git/objects/f7/08267384e619acd7896dcfe6c6ff0c794b59fb | Repository file (see module-level docs or folder guide). |
+| .git/objects/f8/2d5de1c26939773fc64a9c42dcc49ecd044864 | Repository file (see module-level docs or folder guide). |
+| .git/objects/f8/c68a29b21975c1270c4bfdb0422ebb91a82880 | Repository file (see module-level docs or folder guide). |
+| .git/objects/ff/4b38bd0f7d8a0937b40d173400c7eb504d1864 | Repository file (see module-level docs or folder guide). |
+| .git/refs/heads/main | Repository file (see module-level docs or folder guide). |
+| .git/refs/remotes/origin/main | Repository file (see module-level docs or folder guide). |
 | README.md | Project summary, objective, setup, and reproducibility entry points. |
 | __pycache__/app.cpython-312.pyc | Python bytecode cache file. |
 | __pycache__/generate_model_report.cpython-312.pyc | Python bytecode cache file. |
@@ -445,6 +603,8 @@ train_model.py
 | artifacts/metrics_20260423_005542.json | Timestamped metrics artifact snapshot for traceability/history. |
 | artifacts/metrics_20260423_005749.json | Timestamped metrics artifact snapshot for traceability/history. |
 | artifacts/metrics_20260423_010140.json | Timestamped metrics artifact snapshot for traceability/history. |
+| artifacts/metrics_20260423_111810.json | Timestamped metrics artifact snapshot for traceability/history. |
+| artifacts/metrics_20260423_113509.json | Timestamped metrics artifact snapshot for traceability/history. |
 | artifacts/spam_model.joblib | Latest model payload for app inference. |
 | artifacts/spam_model_20260422_232423.joblib | Timestamped model artifact snapshot for traceability/history. |
 | artifacts/spam_model_20260422_232846.joblib | Timestamped model artifact snapshot for traceability/history. |
@@ -455,6 +615,8 @@ train_model.py
 | artifacts/spam_model_20260423_005542.joblib | Timestamped model artifact snapshot for traceability/history. |
 | artifacts/spam_model_20260423_005749.joblib | Timestamped model artifact snapshot for traceability/history. |
 | artifacts/spam_model_20260423_010140.joblib | Timestamped model artifact snapshot for traceability/history. |
+| artifacts/spam_model_20260423_111810.joblib | Timestamped model artifact snapshot for traceability/history. |
+| artifacts/spam_model_20260423_113509.joblib | Timestamped model artifact snapshot for traceability/history. |
 | docs/ARCHITECTURE.md | Mermaid architecture and design notes. |
 | docs/DEMO_WALKTHROUGH.md | Presentation/demo narrative. |
 | docs/DEVELOPER_GUIDE.md | Developer-oriented system and pipeline guidance. |
